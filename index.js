@@ -1,4 +1,5 @@
 // Jenkins automatic trigger verification
+// Test GitHub webhook trigger
 const http = require("http");
 
 const server = http.createServer((req, res) => {
