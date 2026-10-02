@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'docker run --rm -v "$PWD":/app -w /app node:24-alpine npm test'
+                sh 'docker build -t devops-task2-jenkins:latest .'
             }
         }
 
